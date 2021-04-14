@@ -7,24 +7,11 @@ import lombok.extern.java.Log;
 
 @Log
 public class WebdriverInstance {
-	
-	private static WebdriverInstance instance;
-	
+
 	private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
 	private WebdriverInstance() {
 	}
-
-	public static WebdriverInstance getInstance() {
-		if (instance == null) {
-			synchronized (AppiumInstance.class) {
-				if (instance == null)
-					instance = new WebdriverInstance();
-			}
-		}
-		return instance;
-	}
-
 
 	/**
 	 * 

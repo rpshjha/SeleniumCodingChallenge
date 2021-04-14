@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="143497" started-at="2021-04-14T15:14:46 IST" finished-at="2021-04-14T15:17:10 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="143497" started-at="2021-04-14T15:14:46 IST" finished-at="2021-04-14T15:17:10 IST">
+      <class name="com.rpshjha.test.Test_day2">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="setup" is-config="true" duration-ms="2887" started-at="2021-04-14T15:14:46 IST" finished-at="2021-04-14T15:14:49 IST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="11851" started-at="2021-04-14T15:14:49 IST" finished-at="2021-04-14T15:15:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToURL -->
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="15009" started-at="2021-04-14T15:15:01 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T15:15:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Recommended For You]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="2" started-at="2021-04-14T15:15:16 IST" finished-at="2021-04-14T15:15:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="8532" started-at="2021-04-14T15:15:16 IST" finished-at="2021-04-14T15:15:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToURL -->
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="26247" started-at="2021-04-14T15:15:25 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T15:15:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Save big on mobiles & tablets]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-04-14T15:15:51 IST" finished-at="2021-04-14T15:15:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="8676" started-at="2021-04-14T15:15:51 IST" finished-at="2021-04-14T15:16:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToURL -->
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="7670" started-at="2021-04-14T15:16:00 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T15:16:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Top picks in electronics]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-04-14T15:16:07 IST" finished-at="2021-04-14T15:16:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="9319" started-at="2021-04-14T15:16:07 IST" finished-at="2021-04-14T15:16:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToURL -->
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="51780" started-at="2021-04-14T15:16:17 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T15:17:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Buy 1 get 1 free on watches & eyewear]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-04-14T15:17:08 IST" finished-at="2021-04-14T15:17:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="tearDown" is-config="true" duration-ms="1179" started-at="2021-04-14T15:17:08 IST" finished-at="2021-04-14T15:17:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.rpshjha.test.Test_day2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
