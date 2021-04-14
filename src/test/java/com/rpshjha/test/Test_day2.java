@@ -38,8 +38,9 @@ public class Test_day2 extends BaseTest {
 
 		List<String> string = swipe.getAllCarouselText(sectionName);
 
-		System.out.println(sectionName);
-		string.forEach(System.out::println);
+		System.out.println(sectionName + "\ntotal elements present " + string.size());
+		string.stream().filter(i -> !i.isEmpty())
+				.forEach(System.out::println);
 
 		Assert.assertTrue(!string.isEmpty(), "verifying list should not be empty");
 	}

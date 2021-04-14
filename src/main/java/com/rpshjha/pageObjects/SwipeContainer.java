@@ -60,9 +60,10 @@ public class SwipeContainer extends BasePage {
 			
 		
 		while(isSwipeNextButtonDisplayed(sectionName)) {
-	
-			List<WebElement> elements = getDriver().findElements(By.xpath(locator));	
-			textList.addAll(getHelper().getAllText(elements));
+			
+			List<WebElement> elements = getDriver().findElements(By.xpath(locator));
+			
+			textList.addAll(getHelper().getAllTextFromListOfEl(elements));
 			
 			if(isSwipeNextButtonDisplayed(sectionName))
 				clickSwipeButton(sectionName);

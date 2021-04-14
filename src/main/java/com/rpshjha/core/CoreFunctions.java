@@ -52,7 +52,7 @@ public class CoreFunctions extends WaitHelper {
 		executor.executeScript("arguments[0].click();", element);
 	}
 
-	public List<String> getAllText(List<WebElement> elements) {
+	public List<String> getAllTextFromListOfEl(List<WebElement> elements) {
 		List<String> text = new ArrayList<>();
 		for (WebElement temp : elements) {
 			text.add(temp.getText().trim());

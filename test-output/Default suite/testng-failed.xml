@@ -5,7 +5,7 @@
     <classes>
       <class name="com.rpshjha.test.Test_day2">
         <methods>
-          <include name="clickOnSwipeButtonAndFetchCarouselText" invocation-numbers="0"/>
+          <include name="clickOnSwipeButtonAndFetchCarouselText" invocation-numbers="2 3"/>
           <include name="closeBrowser"/>
           <include name="navigateToURL"/>
           <include name="tearDown"/>
