@@ -65,8 +65,7 @@ public class WaitHelper {
 	public void waitForSeconds(int sec) {
 		try {
 			Thread.sleep(1000 * sec);
-		} catch (Exception e) {
-			// TODO: handle exception
+		} catch (Exception ignore) {
 		}
 	}
 

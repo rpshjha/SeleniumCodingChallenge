@@ -5,7 +5,6 @@ import static com.rpshjha.core.WebdriverInstance.getDriver;
 import java.util.List;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -24,11 +23,6 @@ public class Test_day2 extends BaseTest {
 		getDriver().manage().window().maximize();
 		
 		wait.waitForPageToLoad();
-	}
-
-	@AfterMethod
-	public void closeBrowser() {
-		
 	}
 	
 	@Test(dataProvider = "dataprovider_for_swipe_container_section")

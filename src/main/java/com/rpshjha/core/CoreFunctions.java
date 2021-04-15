@@ -65,7 +65,7 @@ public class CoreFunctions extends WaitHelper {
 	 * @param scenarioName
 	 * @return outputFileLocation
 	 */
-	public synchronized String takeFailedScreenshot(String scenarioName) {
+	public static synchronized String takeFailedScreenshot(String scenarioName) {
 
 		scenarioName = scenarioName.replaceAll("[^a-zA-Z0-9_-]", "");
 
@@ -74,7 +74,7 @@ public class CoreFunctions extends WaitHelper {
 				+ "_" + dateFormat.format(new Date()) + ".png";
 		try {
 			log.info("Taking Failed Screenshot ");
-			File srcFile = ((TakesScreenshot) AppiumInstance.getDriver()).getScreenshotAs(OutputType.FILE);
+			File srcFile = ((TakesScreenshot) WebdriverInstance.getDriver()).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(srcFile, new File(outputFileLocation));
 			log.info("Failed Screenshot saved | output file : " + outputFileLocation);
 		} catch (IOException e) {

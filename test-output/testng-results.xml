@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="134949" started-at="2021-04-14T16:25:19 IST" finished-at="2021-04-14T16:27:34 IST">
+  <suite name="Suite" duration-ms="111977" started-at="2021-04-15T14:10:16 IST" finished-at="2021-04-15T14:12:08 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="134949" started-at="2021-04-14T16:25:19 IST" finished-at="2021-04-14T16:27:34 IST">
+    <test name="Test" duration-ms="111977" started-at="2021-04-15T14:10:16 IST" finished-at="2021-04-15T14:12:08 IST">
       <class name="com.rpshjha.test.Test_day2">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="setup" is-config="true" duration-ms="3821" started-at="2021-04-14T16:25:20 IST" finished-at="2021-04-14T16:25:23 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="setup" is-config="true" duration-ms="2459" started-at="2021-04-15T14:10:16 IST" finished-at="2021-04-15T14:10:18 IST">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,11 +16,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="12598" started-at="2021-04-14T16:25:23 IST" finished-at="2021-04-14T16:25:36 IST">
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="navigateToURL" is-config="true" duration-ms="10416" started-at="2021-04-15T14:10:18 IST" finished-at="2021-04-15T14:10:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToURL -->
-        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="10179" started-at="2021-04-14T16:25:36 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T16:25:46 IST">
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="11145" started-at="2021-04-15T14:10:29 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-15T14:10:40 IST">
           <params>
             <param index="0">
               <value>
@@ -31,15 +31,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="3" started-at="2021-04-14T16:25:46 IST" finished-at="2021-04-14T16:25:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="8946" started-at="2021-04-14T16:25:46 IST" finished-at="2021-04-14T16:25:55 IST">
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="navigateToURL" is-config="true" duration-ms="8640" started-at="2021-04-15T14:10:40 IST" finished-at="2021-04-15T14:10:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToURL -->
-        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="21626" started-at="2021-04-14T16:25:55 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T16:26:17 IST">
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="5640" started-at="2021-04-15T14:10:48 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-15T14:10:54 IST">
           <params>
             <param index="0">
               <value>
@@ -50,15 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-04-14T16:26:17 IST" finished-at="2021-04-14T16:26:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="8544" started-at="2021-04-14T16:26:17 IST" finished-at="2021-04-14T16:26:25 IST">
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="navigateToURL" is-config="true" duration-ms="8056" started-at="2021-04-15T14:10:54 IST" finished-at="2021-04-15T14:11:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToURL -->
-        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="5956" started-at="2021-04-14T16:26:25 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T16:26:31 IST">
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="22263" started-at="2021-04-15T14:11:02 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-15T14:11:24 IST">
           <params>
             <param index="0">
               <value>
@@ -69,15 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-04-14T16:26:31 IST" finished-at="2021-04-14T16:26:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="navigateToURL" is-config="true" duration-ms="9622" started-at="2021-04-14T16:26:31 IST" finished-at="2021-04-14T16:26:41 IST">
+        <test-method status="PASS" signature="navigateToURL()[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="navigateToURL" is-config="true" duration-ms="9124" started-at="2021-04-15T14:11:24 IST" finished-at="2021-04-15T14:11:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToURL -->
-        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="52088" started-at="2021-04-14T16:26:41 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-14T16:27:33 IST">
+        <test-method status="PASS" signature="clickOnSwipeButtonAndFetchCarouselText(java.lang.String)[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="clickOnSwipeButtonAndFetchCarouselText" duration-ms="32968" started-at="2021-04-15T14:11:34 IST" data-provider="dataprovider_for_swipe_container_section" finished-at="2021-04-15T14:12:07 IST">
           <params>
             <param index="0">
               <value>
@@ -88,15 +76,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSwipeButtonAndFetchCarouselText -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-04-14T16:27:33 IST" finished-at="2021-04-14T16:27:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rpshjha.test.Test_day2@13e39c73]" name="tearDown" is-config="true" duration-ms="1238" started-at="2021-04-14T16:27:33 IST" finished-at="2021-04-14T16:27:34 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rpshjha.test.Test_day2@9225652]" name="tearDown" is-config="true" duration-ms="1001" started-at="2021-04-15T14:12:07 IST" finished-at="2021-04-15T14:12:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.rpshjha.test.Test_day2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

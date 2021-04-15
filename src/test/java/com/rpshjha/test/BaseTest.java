@@ -1,28 +1,30 @@
 package com.rpshjha.test;
 
-import org.testng.annotations.AfterTest;
+import static com.rpshjha.core.WebdriverInstance.getDriver;
+
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.rpshjha.core.WaitHelper;
 import com.rpshjha.core.WebdriverInstance;
-import static com.rpshjha.core.WebdriverInstance.getDriver;
 
+@Listeners({com.rpshjha.listener.TestNGListener.class})
 public class BaseTest {
 
-	WaitHelper wait;
+	protected WaitHelper wait;
 
 	@Parameters({ "browserName" })
 	@org.testng.annotations.BeforeTest
 	public void setup(@Optional String browserName) {
 
-		WebdriverInstance.createDriver(browserName);
+		WebdriverInstance.initializeDriver(browserName);
 
 		wait = new WaitHelper(getDriver());
 
 	}
 
-	@AfterTest
+	@org.testng.annotations.AfterTest
 	public void tearDown() {
 
 		WebdriverInstance.killDriver();

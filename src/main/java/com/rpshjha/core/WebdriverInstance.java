@@ -2,59 +2,100 @@ package com.rpshjha.core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+import com.rpshjha.listener.WebDriverListener;
 
 import lombok.extern.java.Log;
 
 @Log
 public class WebdriverInstance {
 
-	private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	private static ThreadLocal<EventFiringWebDriver> webDriverThread = new ThreadLocal<>();
 
 	private WebdriverInstance() {
 	}
 
 	/**
+	 * Gets the browser driver.
 	 * 
-	 * @param browserName
-	 * @return {@link WebDriver}
+	 * @param browserName the browser
+	 * @return the browser driver
 	 */
-	public static WebDriver createDriver(String browserName) {
+	private static WebDriver getBrowserDriver(String browserName) {
 
-		if (browserName == null) {
+		WebDriver driver = null;
+
+		if(browserName==null)
 			browserName = BrowserType.CHROME;
-		}
-
+		
 		switch (browserName) {
 
 		case BrowserType.FIREFOX:
-			driver.set(FirefoxDriverInstance.createDriverUsingFirefox());
+			driver = FirefoxDriverInstance.createDriverUsingFirefox();
 			break;
 		case BrowserType.CHROME:
-			driver.set(ChromeDriverInstance.createDriverUsingChrome());
+			driver = ChromeDriverInstance.createDriverUsingChrome();
 			break;
 		case BrowserType.EDGE:
-			driver.set(EdgeDriverInstance.createDriverUsingEdge());
+			driver = EdgeDriverInstance.createDriverUsingEdge();
 			break;
 
 		default:
-			driver.set(ChromeDriverInstance.createDriverUsingChrome());
 			break;
 		}
 
-		return driver.get();
+		return driver;
 	}
 
-	public static WebDriver getDriver() {
-		log.info("getting driver" + driver.get());
-		return driver.get();
+	/**
+	 * Initialize driver.
+	 * 
+	 * @param browser
+	 */
+	public static void initializeDriver(final String browser) {
+
+		final WebDriver webDriver = getBrowserDriver(browser);
+		registerDriver(webDriver);
 	}
 
+	/**
+	 * Register driver.
+	 * 
+	 * @param webDriver the web driver
+	 */
+	private static void registerDriver(final WebDriver webDriver) {
+
+		log.info("Registering Driver ");
+		final WebDriverListener eventListener = new WebDriverListener();
+		final EventFiringWebDriver efd = new EventFiringWebDriver(webDriver);
+		efd.register(eventListener);
+		webDriverThread.set(efd);
+	}
+
+	/**
+	 * Gets the driver.
+	 * @return 
+	 * 
+	 * @return the driver
+	 */
+	public static EventFiringWebDriver getDriver() {
+		return webDriverThread.get();
+	}
+	
+	public static WebDriver getWebDriver() {
+		return getDriver().getWrappedDriver();
+	}
+
+	/**
+	 * kills the driver
+	 */
 	public static void killDriver() {
-		if (driver.get() != null) {
+		if (getDriver() != null) {
 			log.info("Closing the browser");
-			driver.get().quit();
+			getDriver().quit();
 		}
-		driver.remove();
+		webDriverThread.remove();
 	}
 
 }
